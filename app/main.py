@@ -4,7 +4,7 @@ from app.api.endpoints import router
 
 app = FastAPI(title="Inventory Management System")
 
-app.include_router(router, prefix="api/v1")
+app.include_router(router, prefix="/api/v1")
 
 @app.get("/")
 def read_rppt():
